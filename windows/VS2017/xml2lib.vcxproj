@@ -41,9 +41,6 @@
     <ClCompile Include="..\..\parserInternals.c" />
     <ClCompile Include="..\..\pattern.c" />
     <ClCompile Include="..\..\relaxng.c" />
-    <ClCompile Include="..\..\runsuite.c" />
-    <ClCompile Include="..\..\runtest.c" />
-    <ClCompile Include="..\..\runxmlconf.c" />
     <ClCompile Include="..\..\SAX.c" />
     <ClCompile Include="..\..\SAX2.c" />
     <ClCompile Include="..\..\schematron.c" />
@@ -53,6 +50,7 @@
     <ClCompile Include="..\..\valid.c" />
     <ClCompile Include="..\..\xinclude.c" />
     <ClCompile Include="..\..\xlink.c" />
+    <ClCompile Include="..\..\xmlIO.c" />
     <ClCompile Include="..\..\xmlmemory.c" />
     <ClCompile Include="..\..\xmlmodule.c" />
     <ClCompile Include="..\..\xmlreader.c" />
@@ -200,7 +198,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
     </ClCompile>
@@ -219,7 +217,7 @@ xcopy "$(SolutionDir)..\..\include\libxml" "$(WINBUILDS_ROOT)build_msvc15_$(Plat
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
     </ClCompile>
@@ -240,7 +238,7 @@ xcopy "$(SolutionDir)..\..\include\libxml" "$(WINBUILDS_ROOT)build_msvc15_$(Plat
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
     </ClCompile>
@@ -263,7 +261,7 @@ xcopy "$(SolutionDir)..\..\include\libxml" "$(WINBUILDS_ROOT)build_msvc15_$(Plat
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
     </ClCompile>
