@@ -124,7 +124,7 @@ static int glob(const char *pattern, ATTRIBUTE_UNUSED int flags,
                 ATTRIBUTE_UNUSED int errfunc(const char *epath, int eerrno),
                 glob_t *pglob) {
     glob_t *ret;
-    WIN32_FIND_DATA FindFileData;
+    WIN32_FIND_DATAA FindFileData;
     HANDLE hFind;
     unsigned int nb_paths = 0;
     char directory[500];

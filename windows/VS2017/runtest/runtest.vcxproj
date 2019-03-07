@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\runsuite.c" />
+    <ClCompile Include="..\..\..\runtest.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\xml2dll.vcxproj">
@@ -28,9 +28,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D8FE8A34-23D9-4764-9366-1E61080CF64C}</ProjectGuid>
+    <ProjectGuid>{072F93E1-0D40-4FBC-BABB-41F1E2931E71}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>runsuite</RootNamespace>
+    <RootNamespace>runtest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

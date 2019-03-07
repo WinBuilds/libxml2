@@ -6103,7 +6103,7 @@ done:
  * Returns zero if no error, the xmlParserErrors otherwise.
  */
 int
-htmlParseChunk(htmlParserCtxtPtr ctxt, const char *chunk, int size,
+htmlParseChunk(htmlParserCtxtPtr ctxt, const char *chunk, size_t size,
               int terminate) {
     if ((ctxt == NULL) || (ctxt->input == NULL)) {
 	htmlParseErr(ctxt, XML_ERR_INTERNAL_ERROR,
@@ -6190,7 +6190,7 @@ htmlParseChunk(htmlParserCtxtPtr ctxt, const char *chunk, int size,
  */
 htmlParserCtxtPtr
 htmlCreatePushParserCtxt(htmlSAXHandlerPtr sax, void *user_data,
-                         const char *chunk, int size, const char *filename,
+                         const char *chunk, size_t size, const char *filename,
 			 xmlCharEncoding enc) {
     htmlParserCtxtPtr ctxt;
     htmlParserInputPtr inputStream;

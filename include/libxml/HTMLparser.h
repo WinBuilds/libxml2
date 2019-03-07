@@ -153,13 +153,13 @@ XMLPUBFUN htmlParserCtxtPtr XMLCALL
 			htmlCreatePushParserCtxt(htmlSAXHandlerPtr sax,
 						 void *user_data,
 						 const char *chunk,
-						 int size,
+                   size_t size,
 						 const char *filename,
 						 xmlCharEncoding enc);
 XMLPUBFUN int XMLCALL
 			htmlParseChunk		(htmlParserCtxtPtr ctxt,
 						 const char *chunk,
-						 int size,
+                   size_t size,
 						 int terminate);
 #endif /* LIBXML_PUSH_ENABLED */
 

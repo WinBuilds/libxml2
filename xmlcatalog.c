@@ -76,7 +76,7 @@ xmlShellReadline(const char *prompt) {
 #else
     char line_read[501];
     char *ret;
-    int len;
+    size_t len;
 
     if (prompt != NULL)
 	fprintf(stdout, "%s", prompt);

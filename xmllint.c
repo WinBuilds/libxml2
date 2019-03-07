@@ -231,7 +231,7 @@ void parsePath(const xmlChar *path) {
 	while ((*cur != 0) && (*cur != ' ') && (*cur != PATH_SEPARATOR))
 	    cur++;
 	if (cur != path) {
-	    paths[nbpaths] = xmlStrndup(path, cur - path);
+	    paths[nbpaths] = xmlStrndup(path, (int)(cur - path));
 	    if (paths[nbpaths] != NULL)
 		nbpaths++;
 	    path = cur;
@@ -545,7 +545,7 @@ xmlHTMLEncodeSend(void) {
 
 static void
 xmlHTMLPrintFileInfo(xmlParserInputPtr input) {
-    int len;
+    size_t len;
     xmlGenericError(xmlGenericErrorContext, "<p>");
 
     len = strlen(buffer);
@@ -570,7 +570,7 @@ xmlHTMLPrintFileInfo(xmlParserInputPtr input) {
 static void
 xmlHTMLPrintFileContext(xmlParserInputPtr input) {
     const xmlChar *cur, *base;
-    int len;
+    size_t len;
     int n;
 
     if (input == NULL) return;
@@ -624,7 +624,7 @@ xmlHTMLError(void *ctx, const char *msg, ...)
     xmlParserCtxtPtr ctxt = (xmlParserCtxtPtr) ctx;
     xmlParserInputPtr input;
     va_list args;
-    int len;
+    size_t len;
 
     buffer[0] = 0;
     input = ctxt->input;
@@ -661,7 +661,7 @@ xmlHTMLWarning(void *ctx, const char *msg, ...)
     xmlParserCtxtPtr ctxt = (xmlParserCtxtPtr) ctx;
     xmlParserInputPtr input;
     va_list args;
-    int len;
+    size_t len;
 
     buffer[0] = 0;
     input = ctxt->input;
@@ -699,7 +699,7 @@ xmlHTMLValidityError(void *ctx, const char *msg, ...)
     xmlParserCtxtPtr ctxt = (xmlParserCtxtPtr) ctx;
     xmlParserInputPtr input;
     va_list args;
-    int len;
+    size_t len;
 
     buffer[0] = 0;
     input = ctxt->input;
@@ -736,7 +736,7 @@ xmlHTMLValidityWarning(void *ctx, const char *msg, ...)
     xmlParserCtxtPtr ctxt = (xmlParserCtxtPtr) ctx;
     xmlParserInputPtr input;
     va_list args;
-    int len;
+    size_t len;
 
     buffer[0] = 0;
     input = ctxt->input;
@@ -789,7 +789,7 @@ xmlShellReadline(char *prompt) {
 #else
     char line_read[501];
     char *ret;
-    int len;
+    size_t len;
 
     if (prompt != NULL)
 	fprintf(stdout, "%s", prompt);
@@ -815,7 +815,7 @@ xmlShellReadline(char *prompt) {
  ************************************************************************/
 
 static int myRead(void *f, char *buf, int len) {
-    return(fread(buf, 1, len, (FILE *) f));
+    return (int)(fread(buf, 1, len, (FILE *) f));
 }
 static int myClose(void *context) {
     FILE *f = (FILE *) context;
@@ -2193,7 +2193,7 @@ static void parseAndPrintFile(char *filename, xmlParserCtxtPtr rectxt) {
 	f = fopen(filename, "r");
 #endif
         if (f != NULL) {
-            int res;
+            size_t res;
             char chars[4096];
             htmlParserCtxtPtr ctxt;
 
@@ -2262,8 +2262,8 @@ static void parseAndPrintFile(char *filename, xmlParserCtxtPtr rectxt) {
 #endif
 	    }
 	    if (f != NULL) {
-		int ret;
-	        int res, size = 1024;
+          size_t ret;
+	        size_t res, size = 1024;
 	        char chars[1024];
                 xmlParserCtxtPtr ctxt;
 

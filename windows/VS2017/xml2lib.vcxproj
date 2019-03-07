@@ -201,6 +201,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -220,6 +221,7 @@ xcopy "$(SolutionDir)..\..\include\libxml" "$(WINBUILDS_ROOT)build_msvc15_$(Plat
       <PreprocessorDefinitions>_DEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -241,6 +243,7 @@ xcopy "$(SolutionDir)..\..\include\libxml" "$(WINBUILDS_ROOT)build_msvc15_$(Plat
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -264,6 +267,7 @@ xcopy "$(SolutionDir)..\..\include\libxml" "$(WINBUILDS_ROOT)build_msvc15_$(Plat
       <PreprocessorDefinitions>NDEBUG;_LIB;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..;..\..;..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\iconv;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\zlib</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
