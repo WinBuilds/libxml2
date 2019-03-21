@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xmllint.c">
+    <ClCompile Include="..\..\..\xmllint.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

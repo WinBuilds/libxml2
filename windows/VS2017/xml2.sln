@@ -13,9 +13,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "runsuite", "runsuite\runsui
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A2D09659-4C12-46CA-8DB4-115C4DAB51E0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xmllint", "..\xmllint\xmllint.vcxproj", "{F929AA0D-2392-4578-ACD3-1F3036703853}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xmllint", "xmllint\xmllint.vcxproj", "{F929AA0D-2392-4578-ACD3-1F3036703853}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xmlcatalog", "..\xmlcatalog\xmlcatalog.vcxproj", "{AC98A2C8-24D9-41A3-BC85-FBD60648A6E2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xmlcatalog", "xmlcatalog\xmlcatalog.vcxproj", "{AC98A2C8-24D9-41A3-BC85-FBD60648A6E2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "runtest", "runtest\runtest.vcxproj", "{072F93E1-0D40-4FBC-BABB-41F1E2931E71}"
 EndProject
